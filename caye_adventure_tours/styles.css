@@ -1,0 +1,166 @@
+:root{
+    --dark-blue: #022534;
+    --medium-blue: #08546C;
+    --gray-blue: #A0BACC;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    overflow-x: hidden;
+}
+
+@media only screen and (min-width: 320px){
+    body{
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        width: 100vw;
+        background-color: var(--dark-bluej);
+        color: #fff;
+        position: fixed;
+        top: 0;
+    }
+    .nav-links{
+        display: none;
+    }
+    .logo-container{
+        width: 100vw;
+        height: 10vh;
+        background-color: var(--dark-blue);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        padding-left: 0;
+    }
+    .material-icons{
+        font-size: 6vh;
+    }
+    #logo{
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+    .background-container{
+        background-image: url("https://images.pexels.com/photos/2404370/pexels-photo-2404370.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 30%;
+        top: 10vh;
+        height: 90vh;
+        width: 100vw;
+        margin-top: 10vh;
+        padding: 0;
+    }
+    
+    .background-container h1{
+        font-family: Lexend Arial, Helvetica, sans-serif;
+        color: #000;
+        font-size: 3.2rem;
+        font-weight: 800;
+    }
+    .background-container p{
+        font-family: Outfit, Arial, Helvetica, sans-serif;
+        font-size: 1.3rem;
+        font-family: 600;
+        margin-top: 5vh;
+    }
+    .title-container{
+        background-color: rgba(255, 255, 255, 0.4);
+        height: 90vh;
+        padding: 10px;
+        padding-top: 30vh;
+    }
+    #vertical-menu{
+        display: none;
+        position: relative;
+        width: 60vw;
+        background-color: rgba(2, 37, 52, 0.8);
+        top: 35vh;
+        padding-bottom: 40vh;
+        border-bottom-right-radius: 15px;
+    }
+    #vertical-menu a{
+        display: block;
+        font-size: 2.8rem;
+        line-height: 4.2rem;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+    }
+    #about{
+        display: block;
+        top: 10px;
+        background-color: #fff;
+    }
+    .info-container{
+        padding-top: 10vh;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 6vh;
+    }
+    .section-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 7vh;
+    }
+    .section-title h2{
+        font-size: 2.2rem;
+        font-family: Lexend Arial, Helvetica, sans-serif;
+        padding-bottom: 15px;
+        color: var(--medium-blue)
+    }
+    .section-title p{
+        font-size: 1.4rem;
+        font-family: Lexend, Arial, Helvetica, sans-serif;
+        padding-bottom: 15px;
+        color: var(--dark-blue);
+    }
+    p.information{
+        font-size: 1.2rem;
+        font-family: "League Spartan" sans-serif;
+        line-height: 1.6rem;
+        margin-bottom: 8vh;
+    }
+    #caye-caulker{
+        width: 93vw;
+        height: 25vh;
+        box-shadow: -4px 3px 7px #022534;
+    }
+
+    .image-grid-container{
+        width: 95vw;
+        height: 45vh;
+        display: grid;
+        grid-template-columns: 60% 60% 60%;
+        overflow-x: auto;
+        column-gap: 10px;
+        padding-inline-start: 0;
+        margin-bottom: 10vh;
+        border-radius: 10px;
+    }
+
+   .image-container{
+        width: 100%;
+        height: 100%;
+        margin-right: 15px;
+        border-radius: 10px;
+   }
+   .about-pic{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        box-shadow: -3px 3px 5px #000;
+   }
+}
