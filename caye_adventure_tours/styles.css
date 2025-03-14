@@ -128,9 +128,9 @@ html{
         color: var(--dark-blue);
     }
     p.information{
-        font-size: 1.5rem;
-        font-family: "League Spartan" sans-serif;
-        line-height: 1.8rem;
+        font-size: 1.3rem;
+        font-family: Lexend Arial, Helvetica, sans-serif;
+        line-height: 1.7rem;
         margin-bottom: 8vh;
     }
     #caye-caulker{
@@ -163,5 +163,32 @@ html{
         height: 100%;
         border-radius: 10px;
         box-shadow: -3px 3px 5px #000;
+   }
+   .button-container{
+    text-align: center;
+    width: 95vw;
+   }
+   .button{
+    background-color: var(--medium-blue);
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: -2px 3px 5px #000;
+   }
+   footer{
+    background-color: #000;
+    color: #fff;
+    padding: 25px 10px;
+   }
+   .contact{
+    padding-top: 15px;
+    padding-bottom: 20px;
+   }
+   .contact h2{
+    font-family: Lexend Arial, Helvetica, sans-serif;
+    font-size: 1.9rem;
+    padding-bottom: 20px;
    }
 }
