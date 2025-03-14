@@ -143,7 +143,7 @@ html{
         width: 95vw;
         height: 45vh;
         display: grid;
-        grid-template-columns: 60% 60% 60%;
+        grid-template-columns: 80% 80% 80%;
         overflow-x: auto;
         column-gap: 10px;
         padding-inline-start: 0;
