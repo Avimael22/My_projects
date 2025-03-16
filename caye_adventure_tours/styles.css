@@ -42,7 +42,7 @@ html{
     .material-icons{
         font-size: 6vh;
     }
-    #logo{
+    .logo{
         width: 46px;
         height: 46px;
         border-radius: 50%;
@@ -134,7 +134,7 @@ html{
         margin-bottom: 8vh;
     }
     #caye-caulker{
-        width: 93vw;
+        width: 95vw;
         height: 25vh;
         box-shadow: -4px 3px 7px #022534;
     }
@@ -188,7 +188,38 @@ html{
    }
    .contact h2{
     font-family: Lexend Arial, Helvetica, sans-serif;
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     padding-bottom: 20px;
+   }
+   .contact h3{
+    font-size: 1.4rem;
+    font-family: Lexend Arial, Helvetica, sans-serif;
+   }
+   #list-container{
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    padding: 0;
+    margin: 0;
+   }
+   .media-icon{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+
+   }
+   .contact a{
+    color: white;
+   }
+   .footer-logo{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
    }
 }
