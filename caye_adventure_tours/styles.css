@@ -18,6 +18,61 @@ html{
         margin: 0;
         padding: 0;
     }
+    .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: var(--dark-blue);
+        overflow-y: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #fff;
+      }
+      #overlay-icons{
+        width: 60vw;
+        margin-top: 40px;
+        margin-left: 10vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+        padding-inline-start: 0;
+        padding-inline-end: 0;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+      
     nav{
         width: 100vw;
         background-color: var(--dark-bluej);
@@ -196,7 +251,7 @@ html{
     font-family: Lexend Arial, Helvetica, sans-serif;
    }
    #list-container{
-    width: 60vw;
+    width: 50vw;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -217,6 +272,7 @@ html{
     color: white;
    }
    .footer-logo{
+    width: 60vw;
     display: flex;
     align-items: center;
     flex-direction: row;

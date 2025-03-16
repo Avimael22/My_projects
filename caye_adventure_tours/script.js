@@ -1,10 +1,10 @@
 window.addEventListener("DOMContentLoaded", (event)=>{
     /* get the hamburger icon element and store it in a variable */
     const menuIcon = document.getElementById("hamburger-menu");
-    menuIcon.addEventListener("click", showMenuPanel);
+    menuIcon.addEventListener("click", openNav);
 })
 
-function showMenuPanel(){
+/*function showMenuPanel(){
     const verticalMenu = document.getElementById("vertical-menu");
     verticalMenu.innerHTML = `
     <a href="" class="link" style="color:white;">About</a>
@@ -16,4 +16,10 @@ function showMenuPanel(){
     }else{
         verticalMenu.style.display = "block";
     }
-}
+}*/
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.height = "0%";}
