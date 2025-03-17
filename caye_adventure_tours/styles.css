@@ -185,7 +185,7 @@ html{
     p.information{
         font-size: 1.3rem;
         font-family: Lexend Arial, Helvetica, sans-serif;
-        line-height: 1.7rem;
+        line-height: 1.9rem;
         margin-bottom: 8vh;
     }
     #caye-caulker{
@@ -196,9 +196,9 @@ html{
 
     .image-grid-container{
         width: 95vw;
-        height: 45vh;
+        height: 65vh;
         display: grid;
-        grid-template-columns: 80% 80% 80%;
+        grid-template-columns: 85% 85% 85%;
         overflow-x: auto;
         column-gap: 10px;
         padding-inline-start: 0;
@@ -251,7 +251,7 @@ html{
     font-family: Lexend Arial, Helvetica, sans-serif;
    }
    #list-container{
-    width: 50vw;
+    width: 45vw;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -278,4 +278,110 @@ html{
     flex-direction: row;
     justify-content: space-between;
    }
+}
+
+@media only screen and (min-width: 767px){
+    nav{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #hamburger-menu{
+        display: none;
+    }
+    .nav-links{
+        width: 60vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 1.7rem;
+        font-family: Lexend Arial, Helvetica, sans-serif;
+        list-style-type: none;
+    }
+    .nav-links a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .background-container h1{
+        margin-top: 30vh;
+        font-size: 4.2rem;
+        font-weight: 800;
+    }
+    .background-container p{
+        font-weight: 800;
+    }
+    #caye-caulker{
+        width: 98vw;
+        height: 35vh;
+        box-shadow: -4px 3px 7px #022534;
+    }
+    .image-grid-container{
+        width: 98vw;
+        height: 85vh;
+        display: grid;
+        grid-template-columns: 85% 85% 85%;
+        overflow-x: auto;
+        column-gap: 10px;
+        padding-inline-start: 0;
+        margin-bottom: 10vh;
+        border-radius: 10px;
+        overflow-y: hidden;
+    }
+    p.information{
+        width: 70vw;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+    #caye-caulker{
+        height: 60vh
+    }
+    #list-container{
+        width: 250px;
+    }
+}
+@media only screen and (min-width: 1020px){
+    .nav-links a{
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .nav-links a:hover{
+        background-color: #fff;
+        color: #000;
+    }
+    .title-container{
+        padding-top: 20vh;
+    }
+    .background-container h1{
+        width: 70vw;
+        margin-left: 10vw;
+        font-size: 5.1rem;
+      
+    }
+    .background-container p{
+        display: none;
+    }
+    .image-grid-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .follow-icons{
+        display: none;
+    }
+    .contact{
+        text-align: center;
+    }
+    .contact h2{
+        font-size: 2.3rem;
+    }
+    .contact h3{
+        font-size: 2.1rem;
+    }
+    .footer-logo{
+        width: 370px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
