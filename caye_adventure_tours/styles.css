@@ -280,8 +280,17 @@ html{
    }
 
    /*styles for gallery page go here*/
-   .grid-container{
+   .gallery-heading{
+    background-color: #000;
     margin-top: 10vh;
+    padding-top: 5vh;
+    color: #fff;
+    font-size: 3.2rem;
+    font-family: Lexend Arial, Helvetica, sans-serif;
+    text-align: center;
+   }
+   .grid-container{
+    padding-top: 10vh;
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -289,7 +298,9 @@ html{
     grid-auto-flow: row;
     row-gap: 2vh;
     column-gap: 3vw;
-    padding: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 10vh;
     background-color: #000;
    }
    iframe{
