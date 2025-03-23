@@ -296,7 +296,8 @@ html{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 300px);
     grid-auto-flow: row;
-    row-gap: 2vh;
+    grid-auto-rows: 300px;
+    row-gap: 5vh;
     column-gap: 3vw;
     padding-left: 4px;
     padding-right: 4px;
