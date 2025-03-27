@@ -1,25 +1,68 @@
 window.addEventListener("DOMContentLoaded", (event)=>{
-    /* get the hamburger icon element and store it in a variable */
     const menuIcon = document.getElementById("hamburger-menu");
     menuIcon.addEventListener("click", openNav);
 })
 
-/*function showMenuPanel(){
-    const verticalMenu = document.getElementById("vertical-menu");
-    verticalMenu.innerHTML = `
-    <a href="" class="link" style="color:white;">About</a>
-    <a href="" class="link">Gallery</a>
-    <a href="" class="link">Contact</a>
-    `;
-    if (verticalMenu.style.display === "block"){
-        verticalMenu.style.display = "none";
-    }else{
-        verticalMenu.style.display = "block";
-    }
-}*/
+
 function openNav() {
     document.getElementById("myNav").style.height = "100%";
   }
   
-  function closeNav() {
+function closeNav() {
     document.getElementById("myNav").style.height = "0%";}
+
+const slideShowContainer = document.getElementById("slide-gallery");
+let images = [];
+
+const imageElements = slideShowContainer.getElementsByTagName("img");
+
+
+Array.from(imageElements).forEach((p)=>{images.push(p.src)}) //this will push all image sources of the imageelements array to the images array
+console.log(images);
+let currentIndex = 0;
+let startX = 0;
+let endX = 0;
+
+//function to open modal
+function openModal(index){
+    currentIndex = index;
+    document.getElementById("modal").style.display = "flex";
+    updateImage(); //calls the update image when the open modal is triggered
+}
+
+//function to close modal
+function closeModal(){
+    document.getElementById("modal").style.display = "none";
+}
+
+//function to update image
+function updateImage(){
+    document.getElementById("modal-image").src = images[currentIndex];
+}
+
+//functions to navigate images
+function nextImage(){
+    currentIndex = (currentIndex + 1) % images.length;
+    updateImage();
+}
+function previousImage(){
+    currentIndex = (currentIndex - 1 + images.length)% images.length;
+    updateImage();
+}
+
+const modalImage = document.getElementById("modal-image");
+modalImage.addEventListener('touchstart', (event)=>{
+    startX = event.touches[0].clientX
+});
+
+modalImage.addEventListener("touchend", (event) => {
+    endX = event.changedTouches[0].clientX; // Record ending touch point
+  
+    // Determine swipe direction
+    if (startX - endX > 30) {
+      nextImage(); // Swipe left
+    } else if (endX - startX > 30) {
+      previousImage(); // Swipe right
+    }
+  });
+
