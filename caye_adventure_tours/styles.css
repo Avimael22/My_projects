@@ -392,7 +392,7 @@ html{
     justify-content: center;
     align-items: center;
     z-index: 999;
-    background-color: #000;
+    background-color: #fff;
    }
    .modal-box img{
     width: 80%;
@@ -403,7 +403,23 @@ html{
     position: fixed;
     top: 40px;
     right: 30px;
-    color: #fff;
+    color: #000;
+   }
+   span.next-button{
+    color: #000;
+    display: block;
+    position: fixed;
+    top: 50vh;
+    left: 6px;
+    font-size: 32px;
+   }
+   span.previous-button{
+    color: #000;
+    display: block;
+    position: fixed;
+    top: 50vh;
+    right: 6px;
+    font-size: 32px;
    }
 }
 
@@ -469,6 +485,104 @@ html{
     #list-container{
         width: 250px;
     }
+
+    /*code for gallery page goes here*/
+    .grid-container{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 500px;
+        grid-auto-flow: row;
+        grid-auto-rows: 500px;
+        row-gap: 8vh;
+    }
+    .image2{
+        grid-column: 3/5;
+        grid-row: 1/2;
+    }
+    .image3{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .image4{
+        grid-column: 3/5;
+        grid-row: 2/3;
+    }
+    .image5{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    .image6{
+        grid-column: 3/5;
+        grid-row: 3/4;
+    }
+    .image7{
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+    .image8{
+        grid-column: 3/5;
+        grid-row: 4/5;
+    }
+    .image9{
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
+    .image10{
+        grid-column: 3/5;
+        grid-row: 5/6;
+    }
+    .image11{
+        grid-column: 1/3;
+        grid-row: 6/7;
+    }
+    .image12{
+        grid-column: 3/5;
+        grid-row: 6/7;
+    }
+    .image13{
+        grid-column: 1/3;
+        grid-row: 7/8;
+    }
+    .image14{
+        grid-column: 3/5;
+        grid-row: 7/8;
+    }
+    .image15{
+        grid-column: 1/3;
+        grid-row: 8/9;
+    }
+    .image16{
+        grid-column: 3/5;
+        grid-row: 8/9;
+    }
+    .image17{
+        grid-column: 1/3;
+        grid-row: 9/10;
+    }
+    .image18{
+        grid-column: 3/5;
+        grid-row: 9/10;
+    }
+    .image19{
+        grid-column: 1/3;
+        grid-row: 10/11;
+    }
+    .image20{
+        grid-column: 3/5;
+        grid-row: 10/11;
+    }
+    .image21{
+        grid-column: 1/3;
+        grid-row: 11/12;
+    }
+    .image22{
+        grid-column: 3/5;
+        grid-row: 11/12;
+    }
+    .image23{
+        grid-column: 1/5;
+        grid-row: 12/13;
+    }
+   
 }
 @media only screen and (min-width: 1020px){
     .nav-links a{
