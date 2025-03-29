@@ -26,7 +26,9 @@ let endX = 0;
 //function to open modal
 function openModal(index){
     currentIndex = index;
-    document.getElementById("modal").style.display = "flex";
+    const modal = document.getElementById("modal")
+    modal.focus();
+    modal.style.display = "flex";
     updateImage(); //calls the update image when the open modal is triggered
 }
 
@@ -65,4 +67,15 @@ modalImage.addEventListener("touchend", (event) => {
       previousImage(); // Swipe right
     }
   });
+
+document.addEventListener("keydown", (e)=>{
+    if (e.key === "ArrowLeft"){
+        e.preventDefault();
+        previousImage();
+    }
+    else if (e.key === "ArrowRight"){
+        e.preventDefault();
+        nextImage();
+    }
+  })
 

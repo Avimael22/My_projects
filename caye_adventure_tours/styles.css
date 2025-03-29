@@ -232,6 +232,10 @@ html{
     border: none;
     box-shadow: -2px 3px 5px #000;
    }
+   .button a{
+    color: #fff;
+    text-decoration: none;
+   }
    footer{
     background-color: #000;
     color: #fff;
@@ -494,6 +498,10 @@ html{
         grid-auto-rows: 500px;
         row-gap: 8vh;
     }
+    .modal-box img{
+        width: 70%;
+        height: 60%;
+       }
     .image2{
         grid-column: 3/5;
         grid-row: 1/2;
