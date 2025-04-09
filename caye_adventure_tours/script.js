@@ -29,7 +29,7 @@ function createObserver(){
     observer = new IntersectionObserver((entries)=>{
         entries.forEach((entry)=>{
             if (entry.isIntersecting){
-                entry.target.style.backgroundColor = "#08546C";
+                entry.target.style.backgroundColor = "#11212D";
                 sectionHeading.style.color = "#fff";
                 entry.target.style.color = "#fff"
             }else{
