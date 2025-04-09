@@ -3,7 +3,6 @@ window.addEventListener("DOMContentLoaded", (event)=>{
     menuIcon.addEventListener("click", openNav);
 })
 
-
 function openNav() {
     document.getElementById("myNav").style.height = "100%";
   }
@@ -11,71 +10,36 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.height = "0%";}
 
-const slideShowContainer = document.getElementById("slide-gallery");
-let images = [];
+  let targetSection;
 
-const imageElements = slideShowContainer.getElementsByTagName("img");
+  window.addEventListener("load", (event)=>{
+    targetSection = document.getElementById("change-color");
 
+    createObserver();
+}, false)
 
-Array.from(imageElements).forEach((p)=>{images.push(p.src)}) //this will push all image sources of the imageelements array to the images array
-console.log(images);
-let currentIndex = 0;
-let startX = 0;
-let endX = 0;
-
-//function to open modal
-function openModal(index){
-    currentIndex = index;
-    const modal = document.getElementById("modal")
-    modal.focus();
-    modal.style.display = "flex";
-    updateImage(); //calls the update image when the open modal is triggered
-}
-
-//function to close modal
-function closeModal(){
-    document.getElementById("modal").style.display = "none";
-}
-
-//function to update image
-function updateImage(){
-    document.getElementById("modal-image").src = images[currentIndex];
-}
-
-//functions to navigate images
-function nextImage(){
-    currentIndex = (currentIndex + 1) % images.length;
-    updateImage();
-}
-function previousImage(){
-    currentIndex = (currentIndex - 1 + images.length)% images.length;
-    updateImage();
-}
-
-const modalImage = document.getElementById("modal-image");
-modalImage.addEventListener('touchstart', (event)=>{
-    startX = event.touches[0].clientX
-});
-
-modalImage.addEventListener("touchend", (event) => {
-    endX = event.changedTouches[0].clientX; // Record ending touch point
-  
-    // Determine swipe direction
-    if (startX - endX > 30) {
-      nextImage(); // Swipe left
-    } else if (endX - startX > 30) {
-      previousImage(); // Swipe right
+function createObserver(){
+    let observer;
+    const sectionHeading = document.getElementById("change-heading-color");
+    const options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: [0.17]
     }
-  });
+    observer = new IntersectionObserver((entries)=>{
+        entries.forEach((entry)=>{
+            if (entry.isIntersecting){
+                entry.target.style.backgroundColor = "#08546C";
+                sectionHeading.style.color = "#fff";
+                entry.target.style.color = "#fff"
+            }else{
+                entry.target.style.backgroundColor = "#fff";
+                entry.target.style.color = "#000";
+                sectionHeading.style.color = "#08546C";
+            }
+        })
+    },options)
+    observer.observe(targetSection);
 
-document.addEventListener("keydown", (e)=>{
-    if (e.key === "ArrowLeft"){
-        e.preventDefault();
-        previousImage();
-    }
-    else if (e.key === "ArrowRight"){
-        e.preventDefault();
-        nextImage();
-    }
-  })
+}
 
