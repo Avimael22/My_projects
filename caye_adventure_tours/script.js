@@ -24,7 +24,7 @@ function createObserver(){
     const options = {
         root: null,
         rootMargin: "0px",
-        threshold: [0.17]
+        threshold: [0.06]
     }
     observer = new IntersectionObserver((entries)=>{
         entries.forEach((entry)=>{

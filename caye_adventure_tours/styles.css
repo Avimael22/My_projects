@@ -191,7 +191,7 @@ html{
     p.information{
         font-size: 1.3rem;
         font-family: Merienda;
-        line-height: 1.9rem;
+        line-height: 2.1rem;
         margin-bottom: 8vh;
     }
     #caye-caulker{
@@ -266,7 +266,6 @@ html{
    #change-color h3{
     font-size: 1.6rem;
     text-align: center;
-    text-decoration: underline;
    }
    #list-container{
     width: 45vw;
