@@ -296,6 +296,12 @@ html{
     flex-direction: row;
     justify-content: space-between;
    }
+   #cover{
+    background-image: url("https://i.pinimg.com/736x/13/f3/92/13f3923cc505b4100ed16a92728760e2.jpg");
+    background-repeat: repeat;
+    padding-bottom: 17vh;
+    width: 100vw;
+}
    .snorkel-site{
     width: 94vw;
     height: 30vh;
