@@ -109,7 +109,7 @@ html{
         background-image: url("https://images.pexels.com/photos/2404370/pexels-photo-2404370.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: 50% 30%;
+        background-position: 60% 30%;
         top: 10vh;
         height: 90vh;
         width: 100vw;
@@ -120,8 +120,11 @@ html{
     .title-container h1{
         font-family: Lexend Arial, Helvetica, sans-serif;
         color: #000;
-        font-size: 3.2rem;
+        font-size: 3rem;
         font-weight: 900;
+        text-align: center;
+        background-color: rgba(255,255, 255,0.56);
+        
     }
     .background-container p{
         font-family: Outfit, Arial, Helvetica, sans-serif;
@@ -130,10 +133,10 @@ html{
         margin-top: 5vh;
     }
     .title-container{
-        background-color: rgba(255, 255, 255, 0.4);
+        background-color: rgba(255, 255, 255, 0.3);
         height: 90vh;
         padding: 10px;
-        padding-top: 30vh;
+        padding-top: 45vh;
     }
     #vertical-menu{
         display: none;
@@ -195,7 +198,9 @@ html{
         margin-bottom: 8vh;
         padding: 15px;
     }
-
+    #ray{
+        display: none;
+    }
     .image-grid-container{
         width: 95vw;
         height: 65vh;
@@ -290,9 +295,6 @@ html{
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-   }
-   #first-cover{
-    background-image: url("https://i.pinimg.com/736x/91/07/ac/9107acf1689f0cac3f4ebec30cfba7c1.jpg");
    }
    .cover{
     background-image: url("https://i.pinimg.com/736x/13/f3/92/13f3923cc505b4100ed16a92728760e2.jpg");
@@ -452,6 +454,11 @@ html{
     font-size: 32px;
     cursor: pointer;
    }
+
+   /*code for services page*/
+   #autovid{
+    width: 100vw;
+   }
 }
 
 @media only screen and (min-width: 767px){
@@ -479,29 +486,26 @@ html{
         color: #fff;
     }
     .background-container h1{
-        margin-top: 30vh;
+        margin-top: 6vh;
         font-size: 4.2rem;
         font-weight: 800;
     }
     .background-container p{
         font-weight: 800;
     }
-    #caye-caulker{
-        width: 98vw;
-        height: 35vh;
-        box-shadow: -4px 3px 7px #022534;
-    }
     .image-grid-container{
-        width: 98vw;
-        height: 85vh;
+        width: 80vw;
+        height: 70vh;
         display: grid;
-        grid-template-columns: 85% 85% 85%;
+        grid-template-columns: 65% 65% 65%;
         overflow-x: auto;
-        column-gap: 10px;
+        column-gap: 16px;
         padding-inline-start: 0;
         margin-bottom: 10vh;
         border-radius: 10px;
         overflow-y: hidden;
+        margin-left: auto;
+        margin-right: auto;
     }
     p.information{
         width: 70vw;
@@ -510,8 +514,21 @@ html{
         font-size: 1.8rem;
         line-height: 2.5rem;
     }
-    #caye-caulker{
-        height: 60vh
+    .snorkel-site{
+        display: block;
+        width: 75vw;
+        height: 50vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #you-shorts{
+        display: none;
+    
+    }
+    #ray{
+        display: block;
+        width: 100vw;
+        height: 60vh;
     }
     #list-container{
         width: 250px;
@@ -629,9 +646,10 @@ html{
         color: #000;
     }
     .title-container{
-        padding-top: 20vh;
+        padding-top: 30vh;
     }
     .background-container h1{
+
         width: 70vw;
         margin-left: 10vw;
         font-size: 5.1rem;
