@@ -121,9 +121,13 @@ html{
         font-family: Lexend Arial, Helvetica, sans-serif;
         color: #000;
         font-size: 3rem;
-        font-weight: 900;
+        font-weight: 800;
         text-align: center;
         background-color: rgba(255,255, 255,0.56);
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        box-shadow: 3px 4px 8px rgba(0,0,0,0.7);
         
     }
     .background-container p{
@@ -286,8 +290,10 @@ html{
     border-radius: 50%;
 
    }
-   .contact a{
+   #reach p, #reach a{
     color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
    }
    .footer-logo{
     width: 60vw;
@@ -495,9 +501,9 @@ html{
     }
     .image-grid-container{
         width: 80vw;
-        height: 70vh;
+        height: 60vh;
         display: grid;
-        grid-template-columns: 65% 65% 65%;
+        grid-template-columns: 75% 75% 75%;
         overflow-x: auto;
         column-gap: 16px;
         padding-inline-start: 0;
@@ -508,7 +514,7 @@ html{
         margin-right: auto;
     }
     p.information{
-        width: 70vw;
+        width: 80vw;
         margin-left: auto;
         margin-right: auto;
         font-size: 1.8rem;
@@ -529,10 +535,25 @@ html{
         display: block;
         width: 100vw;
         height: 60vh;
+        aspect-ratio: 1/0.5;
     }
     #list-container{
-        width: 250px;
+        width: 150px;
     }
+    .cover{
+        height: 30vh;
+    }
+    #reach p{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .footer-logo{
+        width: 40vw;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+       }
 
     /*code for gallery page goes here*/
     .grid-container{
@@ -634,6 +655,26 @@ html{
         grid-column: 1/5;
         grid-row: 12/13;
     }
+    .image24{
+        grid-column: 1/3;
+        grid-row: 13/14;
+    }
+    .image25{
+        grid-column: 3/5;
+        grid-row: 13/14;
+    }
+    .image39{
+        grid-column: 1/3;
+    }
+    .image40{
+        grid-column: 3/5;
+    }
+    .image41{
+        grid-column: 1/3;
+    }
+    .image42{
+        grid-column: 3/5;
+    }
    
 }
 @media only screen and (min-width: 1020px){
@@ -649,11 +690,46 @@ html{
         padding-top: 30vh;
     }
     .background-container h1{
-
+        display: block;
         width: 70vw;
-        margin-left: 10vw;
+        margin-left: auto;
+        margin-right: auto;
         font-size: 5.1rem;
-      
+    }
+    .snorkel-stop-flex{
+        width: 100vw;
+        height: 60vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-right: 32px;
+        padding-left: 32px;
+        margin-top: 10vh;
+    }
+    .info-flex{
+        display: flex;
+        width: 100%;
+        height: 60vh;
+        flex-direction: column;
+        align-items: start;
+        padding-right: 16px;
+        padding-bottom: 16px;
+    }
+    .info-flex img{
+        margin-right: 32px;
+    }
+    .info-flex h3{
+        display: block;
+        margin-left: 6%;
+        text-decoration: underline;
+        padding-top: 0px;
+        padding-bottom: 32px
+    }
+    .info-flex p.information{
+        display: block;
+        width: 90%;
+        font-size: 1.5rem;
+        margin-right: auto;
     }
     .background-container p{
         display: none;
