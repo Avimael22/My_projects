@@ -13,17 +13,15 @@
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="material-icons">close</span></a>
         <div class="overlay-content">
-          <a href="#about" onclick="closeNav()">About</a>
-          <a href="./gallery/index.html" onclick="closeNav()">Gallery</a>
-          <a href="">Services</a>
-          <a href="#">Contact</a>
+          <a href="../gallery/index.html" onclick="closeNav()">Gallery</a>
+          <a href="../index.html" onclick="closeNav()">Home</a>
           <ul id="overlay-icons">
-            <li><a href="https://www.facebook.com/share/1EGtRASpCt/?mibextid=wwXIfr"><img src="https://i.pinimg.com/736x/d5/3c/7e/d53c7e89006b47482a3c7ec2406825a3.jpg" alt="facebook" class="media-icon"></a></li>
-            <li><a href="https://www.instagram.com/caye_caulker__adventures?igsh=bnRrbTh2eTY3Nnh2"><img src="https://i.pinimg.com/736x/eb/9f/6d/eb9f6de3b91eee469812279f638d88ca.jpg" alt="Instagram" class="media-icon"></a></li>
-            <li><a href="https://wa.me/5016156827?text=Hi%20There"><img src="https://i.pinimg.com/736x/e3/56/4a/e3564a5db49fd3bb9eae2bb75e570d6c.jpg" alt="whatsapp" class="media-icon"></a></li>
-        </ul>
+            <li><a href="https://www.facebook.com/share/1EGtRASpCt/?mibextid=wwXIfr"><img src="https://i.pinimg.com/736x/d5/3c/7e/d53c7e89006b47482a3c7ec2406825a3.jpg" alt="facebook" class="media-icon" onclick="closeNav()"></a></li>
+            <li><a href="https://www.instagram.com/caye_caulker__adventures?igsh=bnRrbTh2eTY3Nnh2"><img src="https://i.pinimg.com/736x/eb/9f/6d/eb9f6de3b91eee469812279f638d88ca.jpg" alt="Instagram" class="media-icon" onclick="closeNav()"></a></li>
+            <li><a href="https://wa.me/5016156827?text=Hi%20There"><img src="https://i.pinimg.com/736x/e3/56/4a/e3564a5db49fd3bb9eae2bb75e570d6c.jpg" alt="whatsapp" class="media-icon" onclick="closeNav()"></a></li>
+          </ul>
         </div>
-      </div>
+    </div>
     <!-- this header will have a fixed position-->
     <header>
         <nav>
@@ -35,38 +33,89 @@
                 <span class="material-icons" id="hamburger-menu" style="margin-left: 10px;">menu</span>
                 <img src="https://i.pinimg.com/736x/52/01/0b/52010b2ec3258222029eaa656bbec890.jpg" alt="Logo" class="logo">
                 <ul class="nav-links" hidden>
-                    <a href="#about"><li >About</li></a>
+                    <a href="../index.html"><li >Home</li></a>
                     <a href="./gallery/index.html"><li >Gallery</li></a>
-                    <a><li >Contact</li></a>
+                    <a href="../services/index.html">Tours</a>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
        <div class="iframe-container">
-        <iframe id="autovid" width="951" height="535" src="https://www.youtube.com/embed/Qo0LTMwJ_K0?autoplay=1&playlist=Qo0LTMwJ_K0&loop=1&controls=0&mute=1&start=0&end=10" title="Sea bed at Hol Chan" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="tour-package-grid-container">
+                <div class="tour-package">
+                    <h2>Full day fishing and snorkeling</h2>
+                    <p>A 6 hour tour which involves both fishing and snorkeling</p>
+                    <p>Departure time: 10am</p>
+                    <p>Snorkeling Stops:</p>
+                    <ul>
+                        <li>Hol Chan marine reserve</li>
+                        <li>Caye Caulker north channel</li>
+                        <li>Coral Gardens</li>
+                        <li>Shark and ray village</li>
+                        <li>Tarpon Hole</li>
+                    </ul>
+                    <button class="book-button"><a href="https://wa.me/5016156827?text=I'm%20Interested%20in%20the%20full%20activity.%20Can%20you%20tell%20me%20more?">Book</a></button>
+                </div>
+                <div class="tour-package">
+                    <h2>Full day fishing and snorkeling</h2>
+                    <p>A 6 hour tour which involves both fishing and snorkeling</p>
+                    <p>Departure time: 10am</p>
+                    <p>Snorkeling Stops:</p>
+                    <ul>
+                        <li>Hol Chan marine reserve</li>
+                        <li>Caye Caulker north channel</li>
+                        <li>Coral Gardens</li>
+                        <li>Shark and ray village</li>
+                        <li>Tarpon Hole</li>
+                    </ul>
+                    <button class="book-button"><a href="https://wa.me/5016156827?text=I'm%20Interested%20in%20the%20full%20activity.%20Can%20you%20tell%20me%20more?">Book</a></button>
+                </div>
+                <div class="tour-package">
+                    <h2>Full day fishing and snorkeling</h2>
+                    <p>A 6 hour tour which involves both fishing and snorkeling</p>
+                    <p>Departure time: 10am</p>
+                    <p>Snorkeling Stops:</p>
+                    <ul>
+                        <li>Hol Chan marine reserve</li>
+                        <li>Caye Caulker north channel</li>
+                        <li>Coral Gardens</li>
+                        <li>Shark and ray village</li>
+                        <li>Tarpon Hole</li>
+                    </ul>
+                    <button class="book-button"><a href="https://wa.me/5016156827?text=I'm%20Interested%20in%20the%20full%20activity.%20Can%20you%20tell%20me%20more?">Book</a></button>
+                </div>
+            </div>
        </div>
     </main>
-    <script defer src="./script.js"></script>
+    <script defer src="../script.js"></script>
 </body>
 <footer>
     <div class="contact">
      <h2>Location</h2>
      <p>Caye Caulker, Belize</p>
      <p>Calle al Sol</p>
+     <a href="https://maps.app.goo.gl/du4YbpVQ75sVcQgR6" style="color: #fff;">
+        <p><sup>*</sup>Show on map</p>
+    </a>
     </div> 
     <div class="contact follow-icons">
      <h2>Follow Us!</h2>
      <ul id="list-container">
-         <li><a href="https://www.facebook.com/share/1EGtRASpCt/?mibextid=wwXIfr"><img src="https://i.pinimg.com/736x/d5/3c/7e/d53c7e89006b47482a3c7ec2406825a3.jpg" alt="facebook" class="media-icon"></a></li>
-         <li><a href="https://www.instagram.com/caye_caulker__adventures?igsh=bnRrbTh2eTY3Nnh2"><img src="https://i.pinimg.com/736x/eb/9f/6d/eb9f6de3b91eee469812279f638d88ca.jpg" alt="Instagram" class="media-icon"></a></li>
-         <li><a href="https://wa.me/5016156827?text=Hi%20There"><img src="https://i.pinimg.com/736x/e3/56/4a/e3564a5db49fd3bb9eae2bb75e570d6c.jpg" alt="Whatsapp" class="media-icon"></a></li>
-     </ul>
+        <li><a href="https://www.facebook.com/share/1EGtRASpCt/?mibextid=wwXIfr"><img src="https://i.pinimg.com/736x/d5/3c/7e/d53c7e89006b47482a3c7ec2406825a3.jpg" alt="facebook" class="media-icon"></a></li>
+        <li><a href="https://www.instagram.com/caye_caulker__adventures?igsh=bnRrbTh2eTY3Nnh2"><img src="https://i.pinimg.com/736x/eb/9f/6d/eb9f6de3b91eee469812279f638d88ca.jpg" alt="Instagram" class="media-icon"></a></li>
+    </ul>
     </div>
-    <div class="contact">
+    <div class="contact" id="reach">
      <h2>Contact us</h2>
-     <a href="">
-         <p>Want to know more?</p>
+     <a href="https://wa.me/5016156827?text=Hi%20There">
+        <p>Whatsapp</p>
+     </a>
+     <a href="mailto:">
+        <p>Email</p>
+     </a>
+     <a href="tel:+5016156827">
+        <p>Phone: 615-6827</p>
      </a>
     </div>
     <div class="footer-logo contact">

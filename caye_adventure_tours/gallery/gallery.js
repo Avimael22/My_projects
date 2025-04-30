@@ -76,4 +76,7 @@ document.addEventListener("keydown", (e)=>{
         e.preventDefault();
         nextImage();
     }
+    else if(e.key === "Escape"){
+        closeModal();
+    }
   })
