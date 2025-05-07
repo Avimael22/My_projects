@@ -1034,7 +1034,9 @@ html{
         width: 100vw;
         height: 100vh;
         background-color: #08546C;
-        background-image: non;
+        background-image: none;
+    }
+
     .tour-package-grid-container{
         width: 95vw;
         height: 100vh;
