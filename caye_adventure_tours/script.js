@@ -16,6 +16,9 @@ function closeNav() {
     targetSection = document.getElementById("change-color");
 
     createObserver();
+
+    const tourPackages = document.getElementsByClassName("tour-package");
+    console.log(tourPackages); 
 }, false)
 
 function createObserver(){
